@@ -77,7 +77,88 @@
 3. Use color contrast to show prominence of UI component, thus to organize the components better by importance and increase usability
 4. Color can have meanings ( Green is often comfort and red can often be alarming )
 5. Color can show the change of state for an UI component ( Such as the pressed and normal state of a button ) Check for an awesome use of EditText state change example in [here](https://material.io/guidelines/style/color.html#color-usability)
-6. When displaying text, try to use opacity instead of shifting to gray
+6. When displaying text, try to use opacity instead of shifting to gray, common opacity for dark text on light background and light text on dark background are as follows
+
+|Dark text (#000000)|Opacity|
+|---|---|
+|Primary text|87%|
+|Secondary text|54%|
+|Disabled text, hint text|38%|
+|Dividers|12%|
+
+<br>
+
+|Light text (#FFFFFF)|Opacity|
+|---|---|
+|Primary text|100%|
+|Secondary text|70%|
+|Disabled text, hint text|50%|
+|Dividers|12%|
+
+7. When displaying icons, such strategy can also be applied to them, the common pattern is as follows
+
+|Dark icons (#000000)|Opacity|
+|---|---|
+|Active Icon|54%|
+|Inactive Icon|38%|
+
+<br>
+
+|Light icons (#000000)|Opacity|
+|---|---|
+|Active Icon|100%|
+|Inactive Icon|50%|
+
+8. Colored text on colored background should be used sparingly, most of the text should use light or dark, only the most important info should be conveyed using colored text
+9. Theme is a good thing to offer consistancy, the four elements are covered here
+	- Status bar
+	- App bar
+	- Background
+	- Card / Dialogs
+
+> The light and dark theme palette along with their UI application can be checked out [here](https://material.io/guidelines/style/color.html#color-themes)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
