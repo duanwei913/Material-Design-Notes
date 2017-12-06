@@ -158,7 +158,26 @@ The conventions for text size among all the components are as follows:
 |Dense|Medium 20sp|Medium 15sp, all caps|Regular 17sp (device), 16sp (desktop)|Regular 15sp (dense), 14sp (desktop)|
 |Tall|Medium 20sp|Bold 15sp|Regular 17sp (device), 16sp (desktop)|Regular 15sp (device), 14sp (desktop)|
 
+16. For android, the font stack should specify Roboto, Noto and then sans-serif
+17. Line wrapping only applies to body, subheading, headlines and the smaller display style. All the other styles should display in one line
+18. Text color should maintian a contrast ratio for better readability (using opacity to control contrastion), the minimum is 4.5:1, the preferred is 7:1, recommended opacity are listed as follows:
 
+|Style|Opacity|
+|---|---|
+|Display 4|54%|
+|Display 3|54%|
+|Display 2|54%|
+|Display 1|54%|
+|Headline|87%|
+|Title|87%|
+|Subheading|87%|
+|Body 2|87%|
+|Body 1|87%|
+|Cpation|54%|
+|Menu|87%|
+|Button|87%|
+
+19. Ideal line length for English body text is 40-60 characters per line, for short lines, 15-40 characters per line is preferred
 
 
 
