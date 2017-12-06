@@ -118,6 +118,50 @@
 
 > The light and dark theme palette along with their UI application can be checked out [here](https://material.io/guidelines/style/color.html#color-themes)
 
+10. Icon consists of **Product Icon** and **System Icon**, product icons are the expression of your products, services or tools you can provide, system icons express a command, file, device, directory or other common actions, **icons product are 48dp and system icons are 24dp**
+
+11. Icons have two kind of states, active or not and focus or not (in Android, enabled, focused), use opacity to disguish from these states
+
+**Icons on light backgrounds**
+
+|Icon state|Opacity|
+|---|---|
+|Active + focused|87%|
+|Active + unfocused|54%|
+|Inactive|38%|
+
+<br>
+
+**Icons on dark backgrounds**
+
+|Icon state|Opacity|
+|---|---|
+|Active + focused|100%|
+|Active + unfocused|70%|
+|Inactive|50%|
+
+12. Product icons with 48dp size should have 1dp margin, when scalling, scale the margin with the rest of the icon (e.g. if the icon is 192dp, the margin should  be 4dp)
+
+13. The rest of the icon and imagery part are too design related, it's best to review directly from [here](https://material.io/guidelines/style/imagery.html)
+
+14. **Roboto** and **Noto** are standard typeface on Android (Noto covering those not covered by Roboto)
+15. There are 3 categories of languages:
+	- English and English like (Latin, Greek, Cyrillic)
+	- Dense (Chinese, Japanese, and Korean)
+	- Tall (South and Southeast Asian and Middle Eastern language)
+
+The conventions for text size among all the components are as follows:
+
+|-|App bar|Buttons|Subheading|Body 1|
+|---|---|---|---|---|
+|English|Medium 20sp|Medium 14sp, all caps|Regular 16sp (device), 15sp (desktop)|Regular 14sp (device), 13sp (desktop)|
+|Dense|Medium 20sp|Medium 15sp, all caps|Regular 17sp (device), 16sp (desktop)|Regular 15sp (dense), 14sp (desktop)|
+|Tall|Medium 20sp|Bold 15sp|Regular 17sp (device), 16sp (desktop)|Regular 15sp (device), 14sp (desktop)|
+
+
+
+
+
 
 
 
