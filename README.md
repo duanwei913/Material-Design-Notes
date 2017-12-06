@@ -178,9 +178,22 @@ The conventions for text size among all the components are as follows:
 |Button|87%|
 
 19. Ideal line length for English body text is 40-60 characters per line, for short lines, 15-40 characters per line is preferred
+20. Try to use "you", "your", "my", "I" when addressing users, but don't mix them, like
+> Quickly open the camera without unlocking your screen
 
+> I agree to follow the Google Terms of Service
 
+21. Avoid using "we" except for situations like "We’ll review your appeal and respond within a few days"
+22. Try to be concise, simple and direct
+23. Use common words
+24. Define glossary, i.e. It's really important using the **same word for same action throughout the app**
+25. Use 1,2,3 to say numbers, don't use one, two, three
+26. **Never say "never"**
+> For more examples and the text for specific UI component, see [here](https://material.io/guidelines/style/writing.html#writing-language)
 
+28. Be friendly, respectful, focus, humble, inviting, positive and essential (examples see the link above)
+29. Use sentence style caps (Don't do something like **Search Setting**)
+30. Don't specify gender if not necessary
 
 
 
