@@ -283,7 +283,15 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 
 13. **16dp is the most commonly used margin in Material Design Documentation** (Almost all the elements in the UI structure that has a margin define it to be 16dp)
 
+<<<<<<< Updated upstream
 14. 
+=======
+<<<<<<< HEAD
+14. Responsive UI seems to me to be developing different UI for differen display size, anyhow, check [here](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-patterns) for a richful amount of amazing apply strategy for different displays
+
+15. Split screen looks like some fancy moves to me, but I haven't figured it out what it can do actually, looks like another way of saying responsive UI within one device now.
+
+### Material Components
 
 
 
