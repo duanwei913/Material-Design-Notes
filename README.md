@@ -531,8 +531,25 @@ Cards may contain the following content blocks:
 	
 Check out some common combintion of contnet blocks [here](https://material.io/guidelines/components/cards.html#cards-content-blocks)
 
+#### Chips
 
+Chips represent complex entities in small blocks, such as a **contact**(Like when you send emails, to "To:" part)
 
+- Usage
+	- A chip may contain a photo, short title and brief information
+	- Chips can be expressed in multiple ways, like free form text, predefined text, rules or contacts
+	
+- Behaviour
+	- Click the chip opens the view containing the full detailed info
+	- A chip can has a delete or close button inside, click it can dismiss the chip
+	
+- Specs
+	- Height : 32dp
+	- Label left padding : 12dp
+	- Label right padding : 0dp (Deletable) ; 12dp (Non-Deletable)
+	- Remove icon (if needed) : 24 * 24dp ; 54%, black ; margins : 4dp
+	
+Check out [here](https://material.io/guidelines/components/chips.html#chips-specs) for a detailed version of Contact Chip specs
 
 
 
