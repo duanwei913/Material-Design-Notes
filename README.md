@@ -407,9 +407,65 @@ There are two major bottom sheets, the Modal bottom sheets and persistent bottom
 		- Grid list text label : 16sp, center horizontal, below icon
 		- List title height : 56dp
 		
+#### Buttons
 
+**Button Types**
+	**Floating action button** : A cicular material button that lifts and displays an ink reaction on press <br>![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B7WCemMG6e0VUl95QlVMNXJLU3c/components-buttons-usage1.png)
+	**Raised button** : A typically rectangular material button that lifts and isplays ink reactions on press <br>![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B7WCemMG6e0VbDh6YmNiYVc3SHM/components-buttons-usage2.png)	
+	**Flat button** : A button made of ink that displays ink reactions on press but does not lift (Like yes and no button in a dialog)<br> ![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B7WCemMG6e0VNDg3V3ZjU2hsNGc/components-buttons-usage3.png)
+	
+|Context|Button type|
+|---|---|
+|Dialog|Use flat buttons in dialogs.|
+|Inline|Raised buttons or flat buttons can be used for inline buttons.|
+|Always available|If your app requires actions to be persistent and readily available, you can use the floating action button or persistent footer buttons.|
 
+**Button Placement**
 
+	- For standard dialog and alike, put buttons along with right with affirmative button on the right
+	- For forms and alike, put buttons along with left with affirmative button on the left
+
+**Flat Buttons**
+
+	- Usage
+		- On toolbars
+		- In dialogs, to unify the button action with the dialog content
+		- Inline, with padding, so the user can easily find them but not cause too much distraction at the same time (Consider examples like agreement doc, share buttons, etc)
+		
+	- Specs
+		- Minimum width : 88dp
+		- Height : 36dp
+		- Corner radius : 2dp
+		- Pressed : 40%, #999 (Light Theme) ; 25%, #CCC (Dark Theme)
+		- Disabled text : 26%, #000 (Light Theme) ; 30%, #FFF (Dark Theme)
+		- Dialog button height : 36dp
+		- Dialog button top margin : 24dp
+		- Dialog button padding : 8dp
+		- Dialog buggon alignment : right 
+		- Consider 12% opacity with text color to background color to disguish focused state
+
+**Raised Buttons**
+
+	- Usage
+		- Give more prominence to actions in layouts with a lot of varying contnet
+		- Help delineate sections of content on a page
+		
+	- Spec
+		- Minimum width : 88dp
+		- Height : 36dp
+		- Corner radius : 2dp
+		- Disabled text : 26%, #000 (Light Theme) ; 30%, #FFF (Dark Theme)
+		- Disabled button : 12%, #000 (Light Theme); 12%, #FFF (Dark Theme)
+		- Focused : 12%, #000 shade over the color
+		- Elevation : default 2dp
+	
+Persistent footer buttons should define spec the same as flat buttons, only fixed to one window foot
+
+**Dropdown Buttons**
+
+> Dropdown buttons contains three categories, the **Generic overflow dropdown button**, the **Segmented dropdown button** and the **Editable segmented dropdown button**
+
+> The biggest difference between generic overflow to segmented dropdown button is that generic buttons has only one selection, and segmented dropdown buttons have two selections, you have to click the current selected state to fire its action
 
 
 
