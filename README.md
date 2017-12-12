@@ -306,6 +306,7 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 		- Navigate through the bottom navigation should reset the view when change ( Doesn't apply for tabs, check out weibo, and the bottom bar itself, shouldn't there exist a situation where user want the exact circumstance be restored, like wechat ios doesn't reset contact when change )
 		- Hide the bar when scrolling down, reveal when scrolling up
 		- Don't use lateral motion ( ? Why not, wechat is against it)
+		
 	-Spec
 		- Action width should divider screen width by number of actions
 		- Minimum : 80dp;  Maximum : 168dp
@@ -315,6 +316,7 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 		- Padding above icon : 6dp (active) ; 8dp (inactive)
 		- Other Padding : 10dp under text, 12dp left and right of text
 		- Text : Roboto Regular 14sp (active) ; Roboto Regular 12sp (inactive)
+		
 	-Spec(Shifting bottom navigation bar)
 		- Only active view has visible text label
 		- Minimum : 56dp (inactive) ; 96dp (active)
@@ -325,15 +327,86 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 		- Padding above icon : 6dp (active) ; 16dp above and below icon (inactive)
 		- Other Padding : 10dp under text
 		- Text : Roboto Regular 14sp (active)
+		
 	-Elevation
 		Elevation of different UI component can be checked out as follows
 		
 ![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B3321sZLoP_HUW9qLXpZTDhhS1U/components-bottomnavigation-spec-elevation3-.png)
 		
-	
+#### Bottom Sheets
+
+There are two major bottom sheets, the Modal bottom sheets and persistent bottom sheets
+
+**Modal bottom sheets** are alternative to menus or simple dialogs, can also present [Deep-Linked](https://en.wikipedia.org/wiki/Mobile_deep_linking) contents from other apps, they take foucs of the screen, must be dismissed before interacting with content underlying (like dialog in Android)
+
+	- Usage
+		- Present actions in a list or grid as an alternative to menus or simple dialogs
+		- Display a context menu, when there is no obvious entry for a menu
+		- Prioritize the visibility of the elements they contain
 		
+	- Style
+		- Should maintain a minimum of 8dp distance from the bottom of the app bar
+		- The sheet should be compact, the height should be decided by its content
+		- Initial height should not pass 16 : 9 ratio
+		
+	- Behaviour
+		- Dismiss by swiping down, touching outside the sheet or touching back button
+	
 
+**Persistent bottom sheets** present in-app content (Like map layer in baidu map)
 
+	- Usage
+		- To introduce new content on a unique surface
+		- To display ocntent equal in value to the primary content
+		
+	- Style
+		- In mobile apps, the persistent bottom sheets are often in full width both portrait and landscape
+		- Initial height should not pass 16 : 9 ratio
+		
+	- Behaviour
+		- Dismiss by touching back button or swiping down
+	
+**Specs for bottom sheets**
+
+	- Font and color
+		- Text : Roboto Regular 16sp, #000, 87%
+		- Title (Optional) : Roboto Regular 16sp, #000, 54%
+		- Default background color : #FFF
+		- Transparent overlay : #000 20%
+		
+	- List Style Bottom Sheet
+		- Screen edge left & right margins : 16dp
+		- Top and bottom margins : 8dp
+		- List-item height : 48dp
+		- List icons : 24 * 24dp, center vertical alignment
+		- Text associated with icons padding : 32dp horizontal
+		
+	- List Style Sheet with Header
+		- Screen edge left & right margins : 16dp
+		- Space below the top list item : 7dp
+		- Divider line : 1dp
+		- Space above second bottom sheet : 8dp
+		- List-item height : 48dp
+		- List icons : 24 * 24dp, center vertical alignment
+		- Text associated with icon spacing : 32 horizontal
+		- List title height : 56dp
+		
+	- Grid Style Bottom Sheet with Icons
+		- Margin on all sides of grid : 24dp
+		- Space between grid list rows : 24dp
+		- Grid list icons : 48 * 48dp, equally spaced by line
+		- Grid list text label : 16sp, center horizontal, below icon
+		- Margin between icon and text : 8dp
+		
+	- Grid Style Bottom Sheet with Header
+		- Screen edge left & right margins : 24dp
+		- Space below list row : 8dp
+		- Divider line : 1dp
+		- Space above and below divider line : 8dp
+		- List icons : 48 * 48dp, center vertical alignment
+		- Grid list text label : 16sp, center horizontal, below icon
+		- List title height : 56dp
+		
 
 
 
