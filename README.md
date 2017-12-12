@@ -315,7 +315,7 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 		- Padding above icon : 6dp (active) ; 8dp (inactive)
 		- Other Padding : 10dp under text, 12dp left and right of text
 		- Text : Roboto Regular 14sp (active) ; Roboto Regular 12sp (inactive)
-	-Spec(**Shifting bottom navigation bar**)
+	-Spec(Shifting bottom navigation bar)
 		- Only active view has visible text label
 		- Minimum : 56dp (inactive) ; 96dp (active)
 		- Maximum : 96 (inactive) ; 168dp (active)
@@ -326,7 +326,9 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 		- Other Padding : 10dp under text
 		- Text : Roboto Regular 14sp (active)
 	-Elevation
-		Elevation of different UI component can be checked out ![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B3321sZLoP_HUW9qLXpZTDhhS1U/components-bottomnavigation-spec-elevation3-.png)
+		Elevation of different UI component can be checked out as follows
+		
+![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B3321sZLoP_HUW9qLXpZTDhhS1U/components-bottomnavigation-spec-elevation3-.png)
 		
 	
 		
