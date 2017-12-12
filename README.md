@@ -492,11 +492,44 @@ For more detailed behaviour and interactions of FAB, check out [here](https://ma
 		- Do not put menu inside the poping up sheet of material
 
 
+#### Cards
 
+- Usage : Display content that : 
+	- As a collection, comprises multiple data types, such as images, movies and text
+	- Does not require direct comparison ( a user is not directly comparing images or text )
+	- Supports content of highly variable length, such as comments
+	- Contains interactive content, such as +1 buttons or comments
+	- Would otherwise be in a grid list but needs to display more contnet to supplement the image
+	- Use list or tile for homogeneous content
+		
+- Content
+	- Content should be hetergeneous, containing image and text
+	- Use hierarchy to direct user's attention, e.g. the primary content should be placed on top of the card
+		
+- Behaviour ([here](https://material.io/guidelines/components/cards.html#cards-behavior) for detailed examples)
+	- Try to use swip and pick-up-and-move gesture
+	- Avoid nest scrolling action in the card, especially when there's a scroll bar outside the card
 
+- Actions ( [here](https://material.io/guidelines/components/cards.html#cards-actions) for detailed examples )
+	- Actions consists of primary action and supplemental action
+	- Primary action is typically the card itself
+	- Supplemental Actions are explicitly called out using icons, text, and UI controls, typically put at the bottom of the card
+	- Limit supplemental actions to 2, in addition to an overflow menu
+	- **Do not** put inlined links inside card text
+	
+- Content Blocks
+Cards may contain the following content blocks:
+	- An optional header
+	- A primary title (24sp / 14sp ; subtitle : 14sp ; left & right margin : 16dp ; top & bottom margin : 16dp or 24dp, depending on whether a large title or a supporting action is offered)
+	- Rich media (16 : 9 or 1 : 1)
+	- Supporting text (14sp ; left & right padding : 16dp ; bottom padding : 16dp or 24dp, depending on whether a supporting action is offered)
+	- Actions (Padding : 8dp)
 
-
-
+- Card Collections
+	- Card margins : 8dp (Try responsive by setting margins to 8dp, 16dp, 24dp, 40dp, etc)
+	- Card elevation : 2dp (resting, default) ; 8dp (raised)
+	
+Check out some common combintion of contnet blocks [here](https://material.io/guidelines/components/cards.html#cards-content-blocks)
 
 
 
