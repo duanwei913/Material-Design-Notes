@@ -467,10 +467,29 @@ Persistent footer buttons should define spec the same as flat buttons, only fixe
 
 > The biggest difference between generic overflow to segmented dropdown button is that generic buttons has only one selection, and segmented dropdown buttons have two selections, you have to click the current selected state to fire its action
 
+#### Floating Action Button
+
+	- Usage 
+		- To represent the "Most Common Actions"
+		- Try to use FAB to represent positive actions
+		
+|Do|Don't|
+|---|---|
+|Create<br>Favorite<br>Share<br>Navigate<br>Explore|Archive or Trash<br>Nonspecific actions<br>Alerts or errors<br>Limited tasks like cutting text<br>Controls that should be in a toolbar, like volumn control or changing a font color|
+		
+	- Spec
+		- Default size : 56 * 56dp
+		- Mini size : 40 * 40dp
+		- Minimal margin : 16dp
+		- Interior icon : 24 * 24dp
 
 
+For more detailed behaviour and interactions of FAB, check out [here](https://material.io/guidelines/components/buttons-floating-action-button.html#buttons-floating-action-button-transitions)
 
-
+	Basic principles are:
+		- FAB are access to primary actions, not flowing menu
+		- FAB can transit to full screen, a part of UI layout and a short sheet of material
+		- Do not put menu inside the poping up sheet of material
 
 
 
