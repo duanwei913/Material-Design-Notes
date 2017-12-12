@@ -283,15 +283,55 @@ The construction looks like ![this](https://storage.googleapis.com/material-desi
 
 13. **16dp is the most commonly used margin in Material Design Documentation** (Almost all the elements in the UI structure that has a margin define it to be 16dp)
 
-<<<<<<< Updated upstream
-14. 
-=======
-<<<<<<< HEAD
 14. Responsive UI seems to me to be developing different UI for differen display size, anyhow, check [here](https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-patterns) for a richful amount of amazing apply strategy for different displays
 
 15. Split screen looks like some fancy moves to me, but I haven't figured it out what it can do actually, looks like another way of saying responsive UI within one device now.
 
+16. Android status bar height: 24dp
+
 ### Material Components
+
+#### Bottom Navigation
+	- Usage
+		- Three to five top-level destination of similar importace (Use TAB instead when there are two and use navigate drawer when there are six or more)
+		- Destinations requiring direct access from anywhere in the app
+	
+	-Style
+		Becuase bottom navigation are presented as icons and text, they should be used for content that can be suitably 
+		- When the view is in focus, display that view‘s icon and text
+		- When there are only 3 actions, display both icon and text all the time ( But disguish with color )
+		- When there are four or five actions, display inactive views as icons only
+		- Don’t make text too long (Try to use one  single word)
+		- Tapping the active action will navigate the user to the top of the view (iOS taps the actionbar)
+		- Navigate through the bottom navigation should reset the view when change ( Doesn't apply for tabs, check out weibo, and the bottom bar itself, shouldn't there exist a situation where user want the exact circumstance be restored, like wechat ios doesn't reset contact when change )
+		- Hide the bar when scrolling down, reveal when scrolling up
+		- Don't use lateral motion ( ? Why not, wechat is against it)
+	-Spec
+		- Action width should divider screen width by number of actions
+		- Minimum : 80dp;  Maximum : 168dp
+		- Height : 56dp
+		- Icon : 24 * 24dp
+		- Alignment : Center Horizontal
+		- Padding above icon : 6dp (active) ; 8dp (inactive)
+		- Other Padding : 10dp under text, 12dp left and right of text
+		- Text : Roboto Regular 14sp (active) ; Roboto Regular 12sp (inactive)
+	-Spec(**Shifting bottom navigation bar**)
+		- Only active view has visible text label
+		- Minimum : 56dp (inactive) ; 96dp (active)
+		- Maximum : 96 (inactive) ; 168dp (active)
+		- Height : 56dp
+		- Icon : 24 * 24dp
+		- Alignment : Center Horizontal
+		- Padding above icon : 6dp (active) ; 16dp above and below icon (inactive)
+		- Other Padding : 10dp under text
+		- Text : Roboto Regular 14sp (active)
+	-Elevation
+		Elevation of different UI component can be checked out ![here](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B3321sZLoP_HUW9qLXpZTDhhS1U/components-bottomnavigation-spec-elevation3-.png)
+		
+	
+		
+
+
 
 
 
