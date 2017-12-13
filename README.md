@@ -732,6 +732,105 @@ The specs contains two many sub-categories, it's best to check out the specific 
 		- Expand / Collapse
 		- Leave behind
 
+#### Menus
+
+- Usage
+	- Context menu : the content changes with the change of app context
+	- Action overflow menu : global actions in the whole app with access normally in app bar
+
+- Behaviour
+	- Menu has the highest elevation, even higher than dialogs, try not to have a dialog and a menu showing at the same time though
+	- For context menu, place current selected item over emmitting item
+	- Don't show duplicate item of the selected one
+	- Dismissing menu is like dismissing a simple dialog, ouside touch, item touch or back button will do
+	- Scrollable menus should always show a scrollbar
+	- Text in menu item are always left-aligned
+	
+- Specs
+	- Menu item height: 48dp
+	- Menu item text left padding: 16dp
+	- Menu item text bottom padding: 20dp
+	- Vertical padding : 8dp
+	- Typography: 16sp
+
+#### Pickers
+
+- Usage
+	- Best used for a confirmation dialog, for date pick or time pick
+	- Date picker and time picker should adapt to device orientation
+
+#### Progress & Activity
+
+- Types of Indicators(Check out linear and circular examples [here](https://material.io/guidelines/components/progress-activity.html#progress-activity-types-of-indicators))
+	- Determinate : indicate how long an operation will take ( Like buffer progress in an online video player )
+	- Indeterminate : visualize an unspecified waiting time (Normal loading progress widget )
+	
+- Behaviour (Check out video examples [here](https://material.io/guidelines/components/progress-activity.html#progress-activity-behavior))
+	- One phase loading : finish all the work in loading and display
+	- Two phase loading : finish some work and start displaying, load the rest and display at the same time
+
+#### Selection Controls
+
+- Style 
+
+|Component|Light Theme|Dark Theme|
+|---|---|---|
+|Checkbox|On: Swatch 500, Opacity 100%<br>Off: #000000, Opacity 54%<br>Disabled: #000000, Opacity 26%|On: Swatch 500, Opacity 100%<br>Off: #FFFFFF, Opacity 70%<br>Disabled: #FFFFFF, Opacity 30%|
+|Radio Button|On: Swatch 500, Opacity 100%<br>Off: #000000, Opacity 54%<br>Disabled: #000000, Opacity 26%|On: Swatch 500, Opacity 100%<br>Off: #FFFFFF, Opacity 70%<br>Disabled: #FFFFFF, Opacity 30%|
+|Switch|Thumb On: Swatch 500, Opacity 100%<br>Track On: Swatch 500, Opacity 50%<br><br>Thumb Off: Grey 50, #FAFAFA, Opacity 100%<br>Track Off: #000000, Opacity 38%<br><br>Thumb Disabled: Grey 400, #BDBDBD, Opacity 100%<br>Track Disabled: #000000, Opacity 12%|Thumb On: Swatch 200, Opacity 100%<br>Track On: Swatch 200, Opacity 50%<br><br>Thumb Off: Grey 400, #BDBDBD, Opacity 100%<br>Track Off: #FFFFFF, Opacity 30%<br><br>Thumb Disabled: Grey 800, #424242, Opacity 100%<br><br>Track Disabled: #FFFFFF, Opacity 10%|
+
+#### Sliders
+
+- Style for Continuous slider and discrete slider
+Check out [here](https://material.io/guidelines/components/sliders.html#sliders-continuous-slider) for detailed examples
+	- Light Theme
+		- Thumb on: Swatch 500, Opacity 100%
+		- Track on: Swatch 500, Opacity 100%
+
+		- Thumb off: #000000, Opacity 26%
+		- Track off: #000000, Opacity 26%
+
+		- Focused and Click Thumb off: #000000, Opacity 38% 
+		- Focused and Click Track off: #000000, Opacity 38%
+
+		- Disabled (disconnected): #000000, Opacity 26%
+		
+	- Dark Theme
+		- Thumb on: Swatch 200, Opacity 100%
+		- Track on: Swatch 200, Opacity 100%
+
+		- Thumb off: #FFFFFF, Opacity 30%
+		- Track off: #FFFFFF, Opacity 30%
+
+		- Disabled (disconnected): #FFFFFF, Opacity 30%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
