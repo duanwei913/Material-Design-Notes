@@ -619,14 +619,118 @@ Most of the specs are covered in the above categorized dialog specs, check out [
 	- Action area height : 52dp
 	- Dialog elevation : 24dp
 
+#### Dividers
 
+- Usage
+	- For lists without anchoring element such as avatar or icon, try to use full-bleed divider to seperate tiles
+	- For grid list, use white space and subheaders to seperate content
+		
+- Types
+	- Full-bleed divider go through the whole window to seperate distinct cnotent or create seam between material (could indicate the material to expand when content is expanded)
+	- Inset dividers create sections, should be used with anchoring elements
+	- Subheaders and dividers used together to reinforce the relationship between the subheaders and its content	
+	
+- Specs
+	- 1dp thick, opacity 12% black in white theme and 12% white in black theme
+		
+#### Expansion Panel
 
+- Usage
+	- A lightweight container that may either stand alone or be connected to a larger surface
+	- Can be used to lightweight edit an element value, or to display in a sequence to make a creation flow
 
+- Behaviour
+	- Expanded state, collapsed state as its literal meaning, focused state for users with keyboard to navigate
+	
+- Specs
+	- Label : Roboto Regular 15sp
+	- Horizontal Padding : 24dp
+	- Vertical Padding : 16dp
+	
+#### Grid Lists
 
+-Usage
+	- For homogeneous data, create better visual comprehension and differentiating between similar data type
+	- Cell is the basic item in a grid list, tiles hold content and can span one or more cells horizontally or vertically
 
+- Content
+	- Should have primary and secondary content, primary should fill the whole grid
 
+- Behaviour
+	- Usually grid list only scroll vertically
+	- Cut off grid tiles in the view's inital scroll position to indicate there are more content
 
+- Specs
+	- Single-line header/footer
+		- Height : 48dp
+		- Text padding : 16dp
+		- Default font size : 16sp
+	
+	- Two-line header/footer
+		- Height : 68dp
+		- Text padding : 16dp
+		- Defaunt font size for each line : 16sp/12sp or 14sp/12sp
+		
+	- Image-only grid list
+		- Grid list padding : 4dp or 1dp
+		
+	- Single-line grid list (Text only or text with icon)
+		- Height : 48dp
+		- Text padding : 16dp
+		- Default font size : 16sp
+		- Grid list padding : 4dp or 1dp
 
+	- Two-line grid list (Text only or text with icon)
+		- Height : 68dp
+		- Text padding : 16dp
+		- Default font size for each line : 16sp/12sp or 14sp/14sp
+		- Grid list padding : 4dp or 1dp
+
+#### List
+
+- Usage
+Display homogenous data type of sets of data types
+
+	- Data should be presented in less than 3 lines of text or Card should be used
+	- Data shouldn't take image as the primary distinguishing content or grid list should be used
+
+- Content
+	- The majority of space on a list tile should be dedicated to the primary action
+	- Place the most distinguishing content towards the left of the tile
+	- In tiles with multi-line content, place the most distinguishing content in the first line
+	- Place supplemental actions on the right side
+	
+- Specs
+The specs contains two many sub-categories, it's best to check out the specific specs according to the layout of your list item [here](https://material.io/guidelines/components/lists.html#lists-specs)
+
+|Layout|Specification|
+|---|---|
+|Single-line text-only|Font: Roboto Regular 16sp/13sp(densed)<br>Height: 48dp/40dp(densed)<br>Horizontal padding: 16dp<br>Top padding: 8dp/4dp(densed)|
+|Single-line text-with-icon|Font: Roboto Regular 16sp/13sp(densed)<br>Height: 48dp/40dp(densed)<br>Icon padding, left: 16dp<br>Text padding, left: 72dp<br>Top padding: 8dp/4dp(densed)|
+|Single-line text-with-avatar|Font: Roboto Regular 16sp/13sp(densed)<br>Height: 56dp/48dp(densed)<br>Left avatar padding: 16dp<br>Text padding, left: 72dp<br>Top padding: 8dp/4dp(densed)|
+|Single-line text-with-avater-with-icon|Font: Roboto Regular 16sp/13sp(densed)<br>Height: 56dp/48dp(densed)<br>Left avatar padding: 16dp<br>Right icon padding: 16dp<br>Text padding, left: 72dp<br>Top padding: 8dp/4dp(densed)|
+|Two-line text-only|Font: Roboto Regular 16sp/13sp(densed)<br>Height: 72dp/60dp(densed)<br>Left and right padding from screen edge: 16dp<br>Top padding: 8dp/4dp(densed)|
+|Two-line text-with-icon|Font: Roboto Regular 16sp/13sp(densed)<br>Height: 72dp/60dp(densed)<br>Icon left padding: 16dp<br>Text left padding: 72dp<br>Padding above list: 8dp/4dp(densed)<br>Text right padding: 16dp|
+|Two-line text-with-avatar|Font: Roboto Regular 16sp/13sp(densed)<br>Tile height: 72dp/60dp(densed)<br>Icon left padding: 16dp<br>Text left padding: 72dp<br>Padding above list: 8dp/4dp(densed)<br>Text right padding: 16dp|
+|Two-line text-with-avatar-with-icon|Font: Roboto Regular 16sp/13sp(densed)<br>Tile height: 72dp/60dp(densed)<br>Icon left padding: 16dp<br>Text left padding: 72dp<br>Padding above list: 8dp/4dp(densed)<br>Text right padding: 16dp|
+|Three-line text-only|Font: Roboto Regular 16sp/13sp(densed)<br>Tile height: 88dp/76dp(densed)<br>Text left padding: 16dp<br>Text right padding: 16dp<br>Padding above list: 8dp/4dp(densed)|
+|Three-line text-with-icon|Font: Roboto Regular 16sp/13sp(densed)<br>Tile height: 88dp/76dp(densed)<br>Icon left padding: 16dp<br>Text left padding: 72dp<br>Text padding right: 16dp<br>Padding above list: 8dp/4dp(densed)|
+|Three-line text-with-avatar|Font: Roboto Regular 16sp/13sp(densed)<br>Tile height: 88dp/76dp(densed)<br>Padding above list: 8dp/4dp(densed)<br>Padding left of avatar: 16dp<br>Text left padding: 72dp<br>Text right padding: 16dp|
+|Three-line text-with-avatar-with-icon|Font: Roboto Regular 16sp/13sp(densed)<br>Tile height: 88dp/76dp(densed)<br>Left avatar padding: 16dp<br>Text left padding: 72dp<br>Padding above list: 8dp/4dp(densed)<br>Right and left padding by the icon: 16dp|
+
+- Controls
+	- Usage
+		- State
+		- Primary action (including text strings)
+		- Secondary action
+		- Secondary info
+	
+	- Types of Controls, check [here](https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-list-controls) for detailed examples
+		- Checkbox
+		- Switch
+		- Reorder (Used to drag the list item somewhere else)
+		- Expand / Collapse
+		- Leave behind
 
 
 
