@@ -551,19 +551,73 @@ Chips represent complex entities in small blocks, such as a **contact**(Like whe
 	
 Check out [here](https://material.io/guidelines/components/chips.html#chips-specs) for a detailed version of Contact Chip specs
 
+#### Data Tables
+
+Data tables are mostly for desktops, check [here](https://material.io/guidelines/components/data-tables.html#) for full guide in case of future need
+
+#### Dialogs
+
+- Behaviour
+	- Use dialog sparingly to reduce interruption
+	- Dialog should always retain focus until dismiss or futher action, try to avoid : 
+		- Opening dialog within dialogs
+		- Containing scrolling content
+	- Full Screen dialogs can open dialogs within it
+	- Dialogs with selections can support scrolling (e.g. selecting ringtone)
+	- Usually, dismissing can be done by tapping outside the dialog, tapping button back, or trigger some action within the dialog
+	
+- Alert
+	- The affirmative action text should be clear, don't use words like "yes" or "no", use something like "Discard", "cancel" to indicate the action
+	- If a title is required:
+		- Use a clear question or statement with explanation in the content area, such as "Erase USB storage?"
+		- Avoid apologies, ambiguity or questions, such as "Warning!" or "Are you sure?"	
+
+- Simple Dialog
+	- Don't add explicit cancel button
+	- Touch ouside the dialog or press button back dismiss the dialog
+	- Touch any selection on the dialog immediately take effect and dismiss the dialog
+	- Dialog should be displayed centered in scren
+	- The horizontal margin of the dialog should be at least 40dp, the vertical margins 24dp
+	- Content of the dialog should have a margin of at least 24dp
+	- Specs
+		- Title top padding : 24dp
+		- Title bottom padding : 20dp
+		- Title text size : Roboto Medium 20sp
+		- Title text line height : 28dp
+		- Content row height with avatar : 56dp
+		- Bottom edge padding : 8dp
+
+- Confirmation Dialog
+	- There are explicit confirm buttons and cancel buttons
+	- Don't launch dialog within dialog
+	- Confirm one single value in one dialog (For multiple values, or launching dialog within dialog, try full-screen dialog)
+
+- Full Screen Dialog
+	- Contains multiple actions and tasks
+	- Serves as a draft, only take effect the confirm button is clicked (Has to have explicit confirm button and cancel button)
+	- Confirm changes and discard changes should have alert dialog within the full-screen dialog
+	- Use "X" instead of arrow back on top left to indicate this is a dialog, not a seperate page for better navigation
+	- Specs
+		- App bar height with a single line of text : 56dp
+		- App bar height with two lines of text : 80dp
+		- Title text margin left : 72dp
+		- Title text : 20sp
+		- Title text vertical padding : 20dp
+		- Dismissive action padding from left edge : 16dp
+		- Affirmative action text : 14sp
+		- Affirmative action horizontal padding : 16dp 
 
 
+- Specs
+Most of the specs are covered in the above categorized dialog specs, check out [here](https://material.io/guidelines/components/dialogs.html#dialogs-specs) for a complete spec definition
 
-
-
-
-
-
-
-
-
-
-
+	- Padding around content area : 24dp
+	- Padding between title and body text : 20dp
+	- Padding around buttons : 8dp
+	- Button height : 36dp
+	- Minimum button width : 64dp
+	- Action area height : 52dp
+	- Dialog elevation : 24dp
 
 
 
