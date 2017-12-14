@@ -805,31 +805,291 @@ Check out [here](https://material.io/guidelines/components/sliders.html#sliders-
 		- Disabled (disconnected): #FFFFFF, Opacity 30%
 
 
+#### Snackbars & Toasts
 
+- Usage
+	- Show only ONE snack bar at a time
+	- Snack bar are lower in elevation than **Dialogs**, **Bottom Sheets** and **Navigation drawers**
+	- Toast appear and disappear automatically, user cannot intercept it, snackbar appear automatically, but user can dismiss it by swipe it out of the screen, trigger the action inside it (Toast cannot have actions), or wait for it to dismiss after a timeout
+	- Don't use anything other than text in snackbar
+	- Add only ONE action at the snackbar, don't add something like dissmiss
+	- Don't block FAB (Check out [here](https://material.io/guidelines/components/snackbars-toasts.html#snackbars-toasts-usage) for example)
+	
+- Specs
+	- Single-line snackbar height: 48dp
+	- Multi-line snackbar height: 80dp
+	- Text: Roboto Regular 14sp
+	- Action button: Roboto Medium 14sp, all-caps text
+	- Default background fill: #323232 100%
+	
+#### Steppers
 
+- Usage
+	- Steppers break a progress into multiple seperate logical and numbered steps like ![this one](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B7WCemMG6e0Vb2hCdkt3d05DVUE/components-acux-stepper-vertstep.png)
+	- Don't use steppers inside stepper
 
+- Types of **steps**
+	- Editable steps : Which user can return later to edit again (Like an online exam, you can always come back and edit your answer before you hand in)
+	- Non-editable steps : User cannot edit one the step is completed (Like reading and writing test in ITELTS, they take your paper away once completed)
+	- Mobile steps : Like a user guide when fist open an app, marked by dots at the bottom
+	- Optional steps
 
+- Types of **steppers**
+	- Horizontal steppers
+	- Vertical steppers
+	- Linear Steppers : User has to finish current step to move to next
+	- Non-linear Steppers : User can choose the steps to finish
 
+- Specs
+	- Standard stepper 
+		- Step height: 72dp
+		- Icon top, bottom, and left padding: 24dp
+		- Icon right padding: 8dp
+		
+	- Optional step
+		- Step height: 72dp
+		- Icon left and right padding: 8dp
+		- Label right padding: 8dp
+		
+	- Alternative Label
+		- Step height: 104dp
+		- Icon left and right padding: 8dp
+		- Label top padding: 16dp
+		- Icon and label padding from edge: 24dp
+		
+	- Non-Linear steppers
+		- Backgorund : 6% black
+		- Step circle : 24 * 24dp, 12sp Roboto Regular, Text 100% white, 38% black
+		
+	- Vertical steppers
+		- Icon left padding: 24dp
+		- Icon alignment with label: Center vertical
+		- Icon top and bottom padding: 8dp
+		- Label top padding: 24dp
+		- Label bottom padding: 16dp
+		- Vertical space between steps: 48dp
+		- Button height: 48dp
+		- Button top padding: 16dp
+		
+	- Mobile steppers
+		- Icon top and bottom padding: 8dp
+		- Label top padding: 24dp
+		- Label button padding (no sublabel): 16dp
+		- Vertical space below inactive step: 40dp
+		- Vertical space below active step: 48dp
+		- Button height: 48dp
 
+#### Subheaders
 
+- Usage 
+	- Subheaders are listed tiles that delineate sections of a list or grid list
+	- May be displayed inline with tiles or associated with content
+	
+- Types
+	- List Subheaders
+		- Tile height : 48dp
+		- Font : Roboto Medium 14sp
+		- Color : could either be secondary gray text (54% black) or the primary color of the app
+		- Alignment : left align with avatar / icon or text if there's a floating button
+		
+	- Grid Subheaders
+		- Tile height : 48dp
+		- Font : Roboto Medium 14sp
+		- Alignment : left align with 16dp padding
+		
+	- Menu Subheaders
+		- Tile height : 48dp
+		- Font : Roboto Medium 14sp
+		- Alignment : left align with 16dp padding
+		
+#### Tabs
 
+- Usage
+	- Use tabs to organize content at a hight level, like to present different sections of a newspaper
+	- Don't use tabs to carousal or pagination of content
+	- Don't use tabs with content taht support swipe
+	- Fixed tabs should be used with a limited number of tabs to aid muscle memory
+	- Scrollable tabs should be used when there are viariable number of tabs (check out examples [here](https://material.io/guidelines/components/tabs.html#tabs-types-of-tabs))
+		
+- Characteristics
+	- Present tabs as a single row. Wrap tab labels to a second line if needed, and then truncate
+	- Do not include a set of tabbed content within a tab
+	- Highlight the tab corresponding to the visible content
+	- Group tabs together hierarchically. Connect a group of tabs with its content (check out examples [here](https://material.io/guidelines/components/tabs.html#tabs-content) )
+	- Keep tabs adjacent to their content to maintain the relationship between the two
+	
+- Specs for fixed tabs
+	- Min width : 160dp for large view and 72dp for small view
+	- Max width : 264dp
+	- Consider divider the full window by the number of tabs if it's narrow, and center or align all the tabs left if it's too wide
+	- Height : 48dp
+	- Horizontal padding : 12dp
+	- Padding bottom : 20dp for single line, 12dp for two lines of text
+	- Indicator : 2dp, #fff or accent color
+	
+|Tab Type|Specs|
+|---|---|
+|Tab with text only|14sp Roboto Medium<br>12sp when wrapped across a maximum of two lines<br>All caps<br>Horizontally and vertically centered<br>Active color: #fff or accent color<br>Unfocused tab color: #fff 70%|
+|Tab with icons and text|72dp in height<br>24 * 24dp icons<br>Text and icons are centered horizontally<br>10dp between icon and text<br>16dp under text|
+|Tab with icons only|48dp in height<br>24 * 24dp icons<br>Icon is centered in the tab<br>12dp under icon|
 
+- Specs for scrollable tabs
+	- Min width : 160dp for large view and 72dp for small view
+	- Max width : 264dp or view width minus 56dp
+	- Height : 48dp
+	- Horizontal padding : 12dp
+	- Padding bottom : 20dp for single line, 12dp for two lines of text
+	- Indicator : 2dp, #fff or accent color
+	- Text
+	
+		- 14sp Roboto Medium
+		- 12sp when wrapped across a maximum of two lines
+		- All caps
+		- Vertically and horizontally centered
+		- Active color: #fff or accent color
+		- Unfocused tab color: #fff 70%
+		
+#### Text Fields
 
+- Principles
+	- **Identifiable** : Using a tappable touch target, text fields should indicate that users can enter information
+	- **Findable** : It should be easy to find a text field among other elements
+	- **Legible** : Text fields should indicate their state – whether enabled or disabled, empty or filled, valid or invalid – with clear label, input, and assistive text
 
+- Layout of elements (It's best to see the image examples [here](https://material.io/guidelines/components/text-fields.html#text-fields-layout))
+	- **Label**
+	Displaying the required input of the field, could be resting or floating
+	
+		- Padding top : 16dp
+		- Padding bottom : 8dp
+		- Padding bottom below input : 8dp (floating mode, check out the image examples)
+	
+	- **Input Line**
+	Indicate where to input, change color to swich from resting to focused state
+	
+	- **Cursor**
+	Indicate the current input position, should only appear upon focused
+	
+	- **Input Text**
+	Could apply auto-complete or suggestions to it
+	
+		- Vertical Padding : 8dp
+		
+	- **Placeholder / Hint Text**
+	Text displaying when input text is empty
+	
+		- Vertical Padding : 8dp
 
+	- **Helper Text**
+	Helper text gives context about a field's input, such as how the input will be used
+	
+		- Left aligned
+		- It's best to keep it in one line
 
+	- **Error Message**
+	Should take the place of helper text if the input is not accepted
+	
+	- **Required Field**
+	Use * to mark a filed as required, or use the (required) / (optional) text to categorize fields
+	
+	- **Charater or word counter**
+	Align right, should be helpful if the input has a word limit, like weibo with limit of 140 characters
+	
+	- **Icon Signifier**
+	Helps to describe the type of input the field requires
+	
+		- Width : 24dp
+		- Padding between icon and text : 16dp
+		
+	- **Voice input** icon if supported
+	
+		- Size : 24 * 24dp
+		- Align bottom with text, right align
+		
+	- **Dropdown icon** if supported
+	
+		- Size : 24 * 24dp
+		- Align bottom with text, right align
+		
+	- **Clear button**
+	Try always offer a clear botton if possible
+	
+		- Size : 24 * 24dp
+		- Align bottom with text ,right align
 
+- State
+	- Enabled / Disables
+	- Idle / Hover / Pressed / Focused
+	- Empty / Filled
+	- Valid / Invalid
 
+Detailed style is as follows ![](https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B5ZSepuCX1xOb195LU9KWEdIeEk/states.png)
 
+Specs alongside with all those different states are too many to recite, cross reference with the images above and check out specs [here](https://material.io/guidelines/components/text-fields.html#text-fields-states)
 
+- Filled Types
+	- Single-line Fields
+	- Multi-line Fields
+	- Text Area
+	
+> Personal Opinion : Single-line Fields and Multi-line Fields expected the input to be short, only Multi-line Fields would assume the content typed is important for further input, at least important enough to change the original layout to fit the new content length. Text area on the other hand, expects a long input in the first place
 
+- Input Types
+	- Formatted Inputs
+		- Grouped Characters ( Like (+86)131 1234 4321 )
+		- Prefixes and suffixes ( Like $10 )
+		- Password redaction
+		
+	- Other Inputs
+		- Menus and pickers
 
+- Field Variations
+	- Labels as headings (Like a dialog with only an input and buttons)
+	- Solo fields ( Like a search input )
+	- Full-width field ( Like when writing an email )
 
+- Text Boxes
+It's ok to add a semi-transparent rectangle background to the input field to increase identification, check out [here](https://material.io/guidelines/components/text-fields.html#text-fields-text-field-boxes) for its specs
 
+#### Toolbars
 
+- Usage
+	- Toolbars appear above app content
+	- Toolbars shouldn't be split by another sheet of material unless it's something transient like a menu or dialog
 
+#### Tooltips
 
+- Usage
+	- Use tooltips for interactive imagery
+	- Tooltips should only contain simple text
+	
+- Interaction
+	- A tooltip is triggered by tapping and holding an item. Keep the tooltip displayed as long as the user continues to hold the element
+	- On lift, display the tooltip for 1.5 seconds
+	- If the user takes another action before that time ends, the tooltip will disappear
 
+- Specs
+	- Text: Roboto Medium 14sp
+	- Color: Grey 700
+	- Opacity: 90%
+	- Tile height: 32dp
+	- Left and right text padding: 16dp
+	- Top margin: 24dp
+
+#### Widgets
+
+- Usage
+Home screen widgets display your app’s new and interesting content in a consolidated form. They link to richer detail within the app
+
+- Types of Widgets
+	- Information widgets ( Like a clock or weather widget )
+	- Collection widgets ( Like a news widget )
+		- They can browse a collection
+		- They can open an element's detail view
+		- They can scroll vertically
+		
+	- Control widgets ( Like a music player )
+	- Hybrid widgets ( Combination of the above )
 
 
 
