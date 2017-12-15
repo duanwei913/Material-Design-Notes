@@ -1092,7 +1092,136 @@ Home screen widgets display your app’s new and interesting content in a consol
 	- Hybrid widgets ( Combination of the above )
 
 
+### Pattern
 
+#### Confirm & Acknowledgement
 
+- Usage
+	- Confirming involves asking the user to verify that they want to proceed with an action
+	- Acknowledging is displaying text to let the user know that the action they chose has been completed
 
+- Confirmation
+	- Use model dialog for confirmation
+	- Use title to echo the request action
+	- Use the content for detailed explanation
+	- Don't confirm for reversable or negligible actions
+	
+- Acknowledgement
+	- Reveals the implicitly done actions
+	- Could paire with an undo action
+	
+#### Data Formats
 
+Different types of numeric and linguistic data are represented using data formats
+
+- Date & Time (Check out for some common practices [here](https://material.io/guidelines/patterns/data-formats.html#data-formats-date-time) if necessary)
+
+	- Talk about date and time
+		- Refer to yesterday or tomorrow in those terms
+		- If the day is in the upcoming week, display the day of the week (such as Tuesday)
+		- Describe a time of day in other ways that promote understanding, such as, “Store open 9:00 AM–Midnight” or “Reminder for tomorrow afternoon”
+
+- Data redaction and Truncation
+	- To redact most numbers, like Social Security numbers, use three midline ellipses [• • •]
+	- Credit and debit card data must be redacted using four midline ellipses [• • • •]
+	- Baseline ellipses [...] represent letters, words, or phrases that aren’t shown. They also represent when a name or email address is only partially visible
+	
+#### Empty States
+	
+A list that doesn’t contain any items, or a search that doesn’t display any results, are examples of empty states. Although these states aren’t typical, they should be designed to prevent user confusion
+
+- Displaying Empty States
+The most basic empty state displays a non-interactive image and a text tagline
+
+	- Use an image that:
+		- Is subtle and neutral with respect to the background
+		- Conveys the purpose and potential of the app in a lively way, such as your app's icon
+		
+	- Include a tagline that:
+		- Has a positive tone
+		- Is consistent with your brand
+		- Conveys the purpose of the app without appearing to be actionable
+	
+- Avoiding Completely Empty States
+There are several situations in which you can provide users with alternatives to truly empty states
+
+	- Starter Content
+	The most compelling way for new users to learn and get excited about your app is by using it. Consider providing starter content that will allow users to explore your app right away
+	
+		- Use content that has broad appeal and demonstrates primary features
+		- Give users the ability to delete and replace this content
+		- If possible, provide content that's personalized
+		
+	- Educational Content
+	If the purpose of the screen isn't easily conveyed through an image and a tagline, consider showing educational content instead
+	
+		- Help users understand what they'll be able to do on this screen once it has content
+		- Make it possible to dismiss or skip this content
+		- Keep it brief
+		
+	- Best Match
+	If nothing exactly matches the user's query, are there any results for a query spelled slightly differently? If so, then show the results, as they may help a user find what they're after
+	**Use a heading to prevent from mistaking it as a match**
+	
+#### Errors
+
+- Usage
+	- Common errors occur as 
+		- The app does not understand user input
+		- The system or app fails
+		- A user intends to run incompatible operations concurrently
+		
+	- When addressing the errors
+		- Clearly communicate what is happening
+		- Describe how a user can resolve it
+		- Preserve as much user-entered input as possible
+		
+- User Input Errors
+Combing the Input in UI Component, try to use helper text, error text, word count text altogether to notify the user the  error in inputs (Check out for specs and image examples [here](https://material.io/guidelines/patterns/errors.html#errors-user-input-errors))
+
+- App Errors
+Use dialogs, snack bars or empty page to indicate the error, try to add solution actions if possible ( Like "Try Again" for broken connection )
+
+- Incompatibility
+Users try to trigger actions conflicting current phone state, like making phoen calll in airplane mode, or do without permission
+
+If not asked ( Like dynamically request permissions ), try with model dialog described above. When user has manually turned off function, use snackbar with concise explanation and an solution action
+
+#### Fingerprint
+
+- Enrollment
+	- Upon opening the app
+	- During your app’s purchase flow
+	- In your app settings
+	- After enrollment
+
+- Icon Spec
+	- Background Circle : 40dp
+	- Icon : 24dp system icon
+	
+- Behavioiur
+	- Check out MiPay for interaction
+	- **Always provide with another way of reauthentication** in case the fingerprint fails
+	- Add a way of entering fingerprint authentication in other authentication ways
+	
+#### Gestures
+
+|Action|Description|Touch mechanics|
+|---|---|---|
+|Activate|Activates a screen element, like a button|Touch|
+|Cancel or Escape|Cancels or escapes out of the current task, as in dialogs or menus|Touch|
+|Enable/Disable lights out|Hides or shows a view’s chrome|Touch|
+|Data selection (when nothing is selected)|Selects a single element|Long press, two-finger touch|
+|Data selection (when items are already selected)|Selects additional elements while in selection mode <br><br>Can use any combination of subsequent one- or two-finger gestures|Touch, two-finger touch|
+|Data multi-selection drag|Reveals selection box that originates from point of gesture initiation <br>The height and width can be adjusted based on finger position. <br>The final selection is based on selection box dimensions upon finger(s) lifting.|Two-finger swipe or drag, long-press drag with no items selected|
+|Pick up and move|Affects the selected item or items. It can be used to:<br>* Rearrange data within a view<br>* Move an item into a container or onto a target<br>* Reorder items in a list or a card collection|Two-finger long-press drag, long-press drag on selected item|
+|Zoom in|Scales up content|Double-touch<br>brDouble-touch drag (down)<br>Pinch open|
+|Zoom in to fit|For nested views, scales up the smallest targetable view|Double-touch|
+|Zoom out|Scales down content|Double-touch at maximum zoom<br>Double-touch drag (up)<br>Pinch closed<br>Two-finger touch<br>Two-finger double touch|
+|Expand|Expands collapsed content|Pinch open|
+|Collapse|Collapses expanded content|Pinch closed|
+|Rotate|Rotates the targeted content|Rotate|
+
+Check out the drag, swipe and fling detail [here](https://material.io/guidelines/patterns/gestures.html#gestures-drag-swipe-or-fling-details)
+
+#### Help & Feedback
